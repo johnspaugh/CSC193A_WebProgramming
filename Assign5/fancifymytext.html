@@ -6,6 +6,7 @@
 
 		<!-- link to your script file here -->
 		
+		<script src="fancifymytext.js"></script>
 	</head>
 
 	<body>
@@ -13,15 +14,18 @@
 		
 
 		<!-- Your UI controls go here -->
-		 <fieldset>
+		 <fieldset >
 			<legend>Text</legend>
-			<textarea rows="4" columns="30" ></textarea>
+			<textarea id="textarea1" rows="4" columns="30" ></textarea>
 		</fieldset>
-		<fancify>
-			<button>Bigger!</button>
-			<input type="radio" >FancyShmancy</input>
-			<input type="radio">BoringBetty</input>
-		</fancify>
+		<fieldset>
+			<legend>Fancity</legend>
+			<button onclick="AlertBoxTest()">Bigger!</button>
+			<input type="radio" name="style" onchange="FancyRadio()" >FancyShmancy</input>
+			<input type="radio" name="style" onchange="BoringRadio()" >BoringBetty</input>
+			<button onclick="Moo()">Moo</button>
+		</fieldset>
 		
+
 	</body>
 </html>
